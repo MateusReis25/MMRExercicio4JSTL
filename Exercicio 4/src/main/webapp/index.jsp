@@ -8,6 +8,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="webjars/bootstrap/5.1.3/css/bootstrap.min.css">
+
 <title>Insert title here</title>
 </head>
 <body>
@@ -45,8 +47,11 @@
 	<%-- ________________________________________________________________________________________--%>		  
 						  
 	<%-- Exercicio 2 --%>					  
-						  
-		
+						  	
+	<c:out value="Calculo de IMC"></c:out>
+	<br>
+	<br>				  	
+						  	
 	 <c:set var="altura" value="1.58"></c:set>
 	 <c:set var="peso" value="75.0"></c:set> 
  	 
@@ -63,10 +68,31 @@
 	 		<c:out value="${media}"></c:out>
 	 	</c:otherwise>
 	 </c:choose>
+	
+	<br>
+	<br>
+	<br>
 
-
- 	 <br>
-						 
+ 	 <%-- ________________________________________________________________________________________--%>		  
+						  
+	<%-- Exercicio 3 --%>	
+					
+	<form>
+	  <div class="mb-3">
+	    <label for="exampleInputEmail1" class="form-label">Email address</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+	    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+	  </div>
+	  <div class="mb-3">
+	    <label for="exampleInputPassword1" class="form-label">Password</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1">
+	  </div>
+	  <div class="mb-3 form-check">
+	    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+	    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+	  </div>
+	  <a href="https://www.instagram.com/"></a><button type="submit" class="btn btn-primary">Login instagran</button>
+	</form>		 
 
 </body>
 </html>
