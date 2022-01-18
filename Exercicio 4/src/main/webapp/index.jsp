@@ -11,6 +11,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+	<%-- Exercicio 1 --%>		
+
 	<%!
 	String today(){
 		java.text.SimpleDateFormat dt = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
@@ -35,6 +38,35 @@
 								<c:out value="${d1}"/>
 							</c:otherwise>
 						  </c:choose></h1>
+	<br>
+	<br>
+	<br>
+								
+	<%-- ________________________________________________________________________________________--%>		  
+						  
+	<%-- Exercicio 2 --%>					  
+						  
+		
+	 <c:set var="altura" value="1.58"></c:set>
+	 <c:set var="peso" value="75.0"></c:set> 
+ 	 
+ 	<c:set var="resultado" value="${(altura * altura) / peso }"></c:set>
+ 	 
+ 	 <c:set var="sobrepeso" value="Sobrepeso"></c:set>
+ 	 <c:set var="media" value="IMC dentro dos padrões" ></c:set>
+	
+	 <c:choose>
+	 	<c:when test="${ resultado > 25 }">
+	 		<c:out value="${sobrepeso }"/>
+	 	</c:when>
+	 	<c:otherwise>
+	 		<c:out value="${media}"></c:out>
+	 	</c:otherwise>
+	 </c:choose>
+
+
+ 	 <br>
+						 
 
 </body>
 </html>
